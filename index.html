@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#081321">
+<meta name="description" content="Thodukayil Group - Petroleum, Construction, Export and Plantation.">
+<title>Thodukayil Group | Official Website</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #081321;
+  color: #f5f5f5;
+  line-height: 1.7;
+}
+
+:root {
+  --gold: #d6ad60;
+  --dark: #081321;
+  --light: #f1e5c8;
+  --card: #112238;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,19,33,.97);
+  border-bottom: 1px solid #806333;
+  padding: 16px 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 21px;
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background:
+    radial-gradient(ellipse at center, #233a50 0%, #081321 75%);
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero .small {
+  color: var(--gold);
+  letter-spacing: 5px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: var(--gold);
+  font-size: clamp(35px, 7vw, 65px);
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-weight: normal;
+  font-size: 21px;
+  margin: 22px 0;
+}
+
+.hero p {
+  color: #c4cbd4;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 27px;
+  background: var(--gold);
+  color: #081321;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #f0d394;
+}
+
+section {
+  padding: 75px 7%;
+  scroll-margin-top: 75px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  color: var(--gold);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #aeb9c6;
+}
+
+.about {
+  background: #0d1b2d;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+  color: #c5cbd4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #806333;
+  border-radius: 8px;
+  padding: 28px 22px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
+
+.card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 13px;
+  font-size: 21px;
+}
+
+.card p {
+  color: #c0cad6;
+  font-size: 14px;
+}
+
+.card ul {
+  margin: 17px 0 0 18px;
+  color: #e1d7c4;
+  font-size: 14px;
+}
+
+.values {
+  background: #0d1b2d;
+}
+
+.value-card {
+  text-align: center;
+}
+
+.value-card h3 {
+  margin-bottom: 10px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px;
+  background: var(--card);
+  border: 1px solid #806333;
+  border-radius: 8px;
+}
+
+.contact-box p {
+  margin: 12px 0;
+  color: #e0e5eb;
+  overflow-wrap: anywhere;
+}
+
+.contact-box a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+footer {
+  background: #050d17;
+  padding: 30px 15px;
+  text-align: center;
+  border-top: 1px solid #806333;
+}
+
+footer h2 {
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+footer p {
+  color: #9ba6b4;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+@media(max-width:600px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 480px;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <div class="logo">THODUKAYIL GROUP</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#divisions">Divisions</a>
+    <a href="#values">Values</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+  <p class="small">WELCOME TO</p>
+  <h1>THODUKAYIL GROUP</h1>
+  <h2>Excellence • Integrity • Growth</h2>
+  <p>
+    A diversified business group with interests in
+    petroleum, construction, exports and plantations.
+  </p>
+  <a class="btn" href="#divisions">Explore Our Businesses</a>
+  <a class="btn" href="#contact">Contact Us</a>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="section-title">
+  <h2>About Us</h2>
+  <p>Our journey, vision and commitment</p>
+</div>
+<div class="about-content">
+  <p>
+    Welcome to Thodukayil Group. We are a diversified
+    business group with operations across multiple
+    industries. Our business interests include petroleum
+    distribution, construction, international exports
+    and plantation management.
+  </p>
+  <br>
+  <p>
+    Our commitment is to build lasting relationships,
+    deliver quality services and create sustainable
+    growth through integrity, innovation and excellence.
+  </p>
+</div>
+</section>
+
+<section id="divisions">
+<div class="section-title">
+  <h2>Our Business Divisions</h2>
+  <p>Four business areas. One group. A shared vision.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+  <div class="icon">⛽</div>
+  <h3>Petroleum Division</h3>
+  <p>
+    Petroleum products distribution and fuel station
+    operations with a commitment to quality and service.
+  </p>
+  <ul>
+    <li>Fuel Distribution</li>
+    <li>Service Stations</li>
+    <li>Bulk Supply</li>
+    <li>Quality Assurance</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="icon">🏗️</div>
+  <h3>Construction Division</h3>
+  <p>
+    Comprehensive construction services for residential,
+    commercial and infrastructure developments.
+  </p>
+  <ul>
+    <li>Residential Projects</li>
+    <li>Commercial Buildings</li>
+    <li>Infrastructure</li>
+    <li>Project Management</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="icon">🚢</div>
+  <h3>Export Division</h3>
+  <p>
+    Export operations focused on spices, agricultural
+    products and traditional commodities.
+  </p>
+  <ul>
+    <li>Spice Export</li>
+    <li>Agricultural Products</li>
+    <li>Global Logistics</li>
+    <li>Quality Control</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="icon">🌴</div>
+  <h3>Plantation Division</h3>
+  <p>
+    Plantation management focused on sustainable
+    agriculture and responsible farming practices.
+  </p>
+  <ul>
+    <li>Rubber Plantations</li>
+    <li>Coconut Estates</li>
+    <li>Sustainable Farming</li>
+    <li>Modern Techniques</li>
+  </ul>
+</div>
+
+</div>
+</section>
+
+<section class="values" id="values">
+<div class="section-title">
+  <h2>Our Core Values</h2>
+  <p>The principles behind everything we do</p>
+</div>
+
+<div class="grid">
+
+<div class="card value-card">
+  <div class="icon">🛡️</div>
+  <h3>Integrity</h3>
+  <p>Honesty and ethical business practices in every operation.</p>
+</div>
+
+<div class="card value-card">
+  <div class="icon">🏆</div>
+  <h3>Excellence</h3>
+  <p>Delivering quality and service across our divisions.</p>
+</div>
+
+<div class="card value-card">
+  <div class="icon">💡</div>
+  <h3>Innovation</h3>
+  <p>Embracing modern technologies and new opportunities.</p>
+</div>
+
+<div class="card value-card">
+  <div class="icon">🌱</div>
+  <h3>Sustainability</h3>
+  <p>Building a better future through responsible practices.</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-title">
+  <h2>Contact Us</h2>
+  <p>We would love to hear from you</p>
+</div>
+
+<div class="contact-box">
+  <h3 style="color:#d6ad60">THODUKAYIL GROUP</h3>
+
+  <p>📧 Email:
+    <a href="mailto:sionbinze@gmail.com">
+      sionbinze@gmail.com
+    </a>
+  </p>
+
+  <p>📞 Phone:
+    <a href="tel:+919946991012">
+      +91 9946991012
+    </a>
+  </p>
+
+  <p>📍 Address: Kottayam, Kerala 686585</p>
+
+  <a class="btn"
+     href="https://wa.me/919946991012"
+     target="_blank">
+     Chat on WhatsApp
+  </a>
+</div>
+</section>
+
+<footer>
+  <h2>THODUKAYIL GROUP</h2>
+  <p>Excellence • Integrity • Growth</p>
+  <p>
+    © <span id="year"></span> Thodukayil Group.
+    All Rights Reserved.
+  </p>
+  <p>Official Website</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
