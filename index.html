@@ -1,474 +1,162 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#081321">
-<meta name="description" content="Thodukayil Group - Petroleum, Construction, Export and Plantation.">
-<title>Thodukayil Group | Official Website</title>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #081321;
-  color: #f5f5f5;
-  line-height: 1.7;
-}
-
-:root {
-  --gold: #d6ad60;
-  --dark: #081321;
-  --light: #f1e5c8;
-  --card: #112238;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(8,19,33,.97);
-  border-bottom: 1px solid #806333;
-  padding: 16px 5%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.logo {
-  font-size: 21px;
-  color: var(--gold);
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: var(--gold);
-}
-
-.hero {
-  min-height: 570px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 80px 20px;
-  background:
-    radial-gradient(ellipse at center, #233a50 0%, #081321 75%);
-}
-
-.hero-content {
-  max-width: 850px;
-}
-
-.hero .small {
-  color: var(--gold);
-  letter-spacing: 5px;
-  font-size: 13px;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  color: var(--gold);
-  font-size: clamp(35px, 7vw, 65px);
-  letter-spacing: 3px;
-  line-height: 1.2;
-}
-
-.hero h2 {
-  font-weight: normal;
-  font-size: 21px;
-  margin: 22px 0;
-}
-
-.hero p {
-  color: #c4cbd4;
-  margin-bottom: 32px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 13px 27px;
-  background: var(--gold);
-  color: #081321;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  margin: 5px;
-}
-
-.btn:hover {
-  background: #f0d394;
-}
-
-section {
-  padding: 75px 7%;
-  scroll-margin-top: 75px;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-title h2 {
-  color: var(--gold);
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.section-title p {
-  color: #aeb9c6;
-}
-
-.about {
-  background: #0d1b2d;
-  text-align: center;
-}
-
-.about-content {
-  max-width: 850px;
-  margin: auto;
-  color: #c5cbd4;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-}
-
-.card {
-  background: var(--card);
-  border: 1px solid #806333;
-  border-radius: 8px;
-  padding: 28px 22px;
-  transition: .3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold);
-}
-
-.card .icon {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  color: var(--gold);
-  margin-bottom: 13px;
-  font-size: 21px;
-}
-
-.card p {
-  color: #c0cad6;
-  font-size: 14px;
-}
-
-.card ul {
-  margin: 17px 0 0 18px;
-  color: #e1d7c4;
-  font-size: 14px;
-}
-
-.values {
-  background: #0d1b2d;
-}
-
-.value-card {
-  text-align: center;
-}
-
-.value-card h3 {
-  margin-bottom: 10px;
-}
-
-.contact {
-  text-align: center;
-}
-
-.contact-box {
-  max-width: 650px;
-  margin: auto;
-  padding: 30px;
-  background: var(--card);
-  border: 1px solid #806333;
-  border-radius: 8px;
-}
-
-.contact-box p {
-  margin: 12px 0;
-  color: #e0e5eb;
-  overflow-wrap: anywhere;
-}
-
-.contact-box a {
-  color: var(--gold);
-  text-decoration: none;
-}
-
-footer {
-  background: #050d17;
-  padding: 30px 15px;
-  text-align: center;
-  border-top: 1px solid #806333;
-}
-
-footer h2 {
-  color: var(--gold);
-  letter-spacing: 2px;
-}
-
-footer p {
-  color: #9ba6b4;
-  font-size: 13px;
-  margin-top: 10px;
-}
-
-@media(max-width:600px) {
-  nav {
-    justify-content: center;
-  }
-
-  nav a {
-    margin: 5px;
-    font-size: 12px;
-  }
-
-  .hero {
-    min-height: 480px;
-  }
-
-  section {
-    padding: 55px 6%;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071522">
+  <meta name="description" content="Thodukayil Group — a diversified business group in petroleum, construction, exports and plantations.">
+  <title>Thodukayil Group | Building Value. Growing Together.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#071522;--ink2:#0d2233;--gold:#c9a66b;--gold2:#ead5ad;--paper:#f6f5f1;--muted:#aab6c0;--white:#fff;--line:rgba(255,255,255,.13);--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--white);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover}button,input,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+    .topline{height:4px;background:linear-gradient(90deg,#8e6b3e,var(--gold2),#8e6b3e)}
+    header{position:sticky;top:0;z-index:30;background:rgba(7,21,34,.91);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font:800 20px Manrope,sans-serif;letter-spacing:.08em}.brand-mark{height:42px;width:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:700 18px Manrope}.brand small{display:block;color:var(--gold);font:500 9px "DM Sans";letter-spacing:.27em;margin-top:-4px}
+    .links{display:flex;gap:30px;align-items:center;color:#d8e0e5;font-size:13px}.links a:hover{color:var(--gold2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:4px;background:var(--gold);color:#101c26;font-weight:700;font-size:13px;letter-spacing:.03em;border:1px solid var(--gold);transition:.25s}.nav-cta:hover,.btn:hover{background:var(--gold2);transform:translateY(-2px)}.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:9px 12px;border-radius:4px}
+    .hero{min-height:680px;position:relative;display:flex;align-items:center;overflow:hidden;background:#091a28}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,15,25,.94) 0%,rgba(4,15,25,.76) 48%,rgba(4,15,25,.18) 100%),url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=85") center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,var(--ink))}
+    .hero-content{position:relative;z-index:1;max-width:760px;padding:100px 0 130px}.eyebrow{color:var(--gold2);font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";height:1px;width:34px;background:var(--gold)}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;margin:0}h1{font-size:clamp(44px,7vw,82px);letter-spacing:-.055em;margin:25px 0 22px}h1 span{color:var(--gold2)}.hero p{max-width:580px;color:#d1d9df;font-size:17px;margin:0 0 32px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn-outline{background:transparent;color:white;border-color:rgba(255,255,255,.5)}.btn-outline:hover{background:rgba(255,255,255,.1);border-color:var(--gold2)}
+    .hero-note{position:absolute;right:max(24px,calc((100vw - var(--max))/2));bottom:70px;z-index:2;border-left:2px solid var(--gold);padding:9px 0 9px 18px;color:#e3e9ed;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+    .intro{padding:110px 0 105px;background:var(--paper);color:var(--ink)}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}.intro h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.04em;margin:18px 0}.intro p{color:#52616b;font-size:16px}.intro .eyebrow{color:#8d6b3e}.intro-photo{height:440px;position:relative}.intro-photo img{height:100%;border-radius:3px}.photo-tag{position:absolute;right:-20px;bottom:25px;background:var(--ink2);color:white;padding:20px 24px;max-width:220px;border-bottom:2px solid var(--gold);font:600 14px Manrope}
+    .section{padding:105px 0}.section-head{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:42px}.section-head h2{font-size:clamp(32px,4vw,50px);letter-spacing:-.04em;margin-top:15px}.section-head p{max-width:400px;color:var(--muted);margin:0}.services{background:#0a1b29}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service-card{background:#102638;border:1px solid rgba(255,255,255,.08);min-height:390px;position:relative;overflow:hidden;transition:.3s}.service-card:hover{transform:translateY(-7px);border-color:rgba(201,166,107,.6)}.service-card img{height:220px;transition:.5s}.service-card:hover img{transform:scale(1.05)}.service-body{padding:22px}.service-num{color:var(--gold);font-size:11px;letter-spacing:.2em}.service-body h3{font-size:20px;margin:8px 0}.service-body p{color:#adbac4;font-size:13px;margin:0}
+    .statement{padding:90px 0;background:linear-gradient(90deg,rgba(7,21,34,.94),rgba(7,21,34,.72)),url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=2000&q=80") center/cover fixed}.statement-inner{max-width:850px}.statement h2{font-size:clamp(34px,5vw,60px);letter-spacing:-.045em}.statement h2 span{color:var(--gold2)}
+    .gallery{background:var(--paper);color:var(--ink)}.gallery .eyebrow{color:#8d6b3e}.gallery .section-head p{color:#5d6b75}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:210px 210px;gap:14px}.gallery-grid img{height:100%;border-radius:2px}.gallery-grid img:first-child{grid-row:span 2}
+    .contact{background:#0b1e2d}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact h2{font-size:clamp(34px,4vw,52px);margin:16px 0}.contact-copy p{color:#afbbc4;max-width:480px}.contact-list{margin-top:30px;display:grid;gap:16px}.contact-item{display:flex;gap:14px;align-items:center;color:#e5e9eb}.contact-icon{height:42px;width:42px;border:1px solid rgba(201,166,107,.5);display:grid;place-items:center;color:var(--gold2);border-radius:50%}.contact-item small{display:block;color:#8e9ba5;font-size:11px;text-transform:uppercase;letter-spacing:.15em}.contact-form{background:#102638;padding:30px;border:1px solid var(--line)}.contact-form label{display:block;font-size:12px;color:#d3dbe0;margin:0 0 7px}.contact-form input,.contact-form textarea{width:100%;background:#091a28;border:1px solid rgba(255,255,255,.14);padding:13px;color:white;border-radius:3px;margin-bottom:16px;outline:none}.contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}.contact-form textarea{min-height:110px;resize:vertical}.contact-form .btn{width:100%;cursor:pointer}
+    footer{background:#050f18;border-top:1px solid var(--line);padding:32px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer-brand{font:800 16px Manrope;letter-spacing:.1em}.footer-brand span{color:var(--gold)}footer p{margin:7px 0 0;color:#8997a2;font-size:12px}.footer-email{color:var(--gold2);font-weight:600}.copyright{color:#71808b;font-size:11px}
+    .chat-launch{position:fixed;right:24px;bottom:24px;z-index:50;width:64px;height:64px;border:0;border-radius:50%;background:var(--gold);color:#101c26;box-shadow:0 12px 35px #0008;cursor:pointer;font-size:25px}.chat-panel{position:fixed;right:24px;bottom:100px;z-index:50;width:min(370px,calc(100vw - 32px));height:500px;max-height:70vh;background:#f8f8f6;color:#10202c;box-shadow:0 22px 70px #0009;border-radius:12px;overflow:hidden;display:none;flex-direction:column}.chat-panel.open{display:flex}.chat-head{background:var(--ink2);color:white;padding:17px;display:flex;justify-content:space-between;align-items:center}.chat-head strong{font:700 15px Manrope}.chat-head small{display:block;color:#c5d0d8;font-size:11px}.chat-close{background:none;border:0;color:white;font-size:24px;cursor:pointer}.chat-messages{padding:16px;overflow:auto;display:flex;flex-direction:column;gap:11px;flex:1}.bubble{max-width:88%;padding:11px 13px;border-radius:12px;font-size:13px;white-space:pre-wrap;line-height:1.5}.bubble.bot{background:#e8ecee;align-self:flex-start}.bubble.user{background:#102638;color:white;align-self:flex-end}.chat-compose{display:flex;padding:12px;border-top:1px solid #dce1e4;gap:8px}.chat-compose input{flex:1;min-width:0;border:1px solid #d4dade;border-radius:22px;padding:11px 13px;outline:none}.chat-compose button{border:0;background:var(--gold);border-radius:50%;height:42px;width:42px;cursor:pointer;font-weight:800}.chat-hint{padding:0 14px 9px;color:#6a7881;font-size:10px;background:#f8f8f6}
+    @media(max-width:900px){.links{gap:15px}.service-grid{grid-template-columns:repeat(2,1fr)}.intro-grid{gap:40px}.hero{min-height:620px}.hero-note{display:none}}
+    @media(max-width:650px){.wrap{width:min(100% - 34px,var(--max))}.nav{height:70px}.menu{display:block}.links{display:none;position:absolute;top:70px;left:0;right:0;padding:20px 24px;background:#081827;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.show{display:flex}.nav-cta{display:none}.hero{min-height:610px}.hero-content{padding:80px 0 100px}.hero p{font-size:15px}.intro,.section{padding:75px 0}.intro-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.intro-photo{height:330px;margin-right:12px}.photo-tag{right:-10px}.section-head{display:block}.section-head p{margin-top:17px}.service-grid{grid-template-columns:1fr 1fr;gap:10px}.service-card{min-height:340px}.service-card img{height:165px}.service-body{padding:15px}.service-body h3{font-size:16px}.service-body p{font-size:12px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 150px}.gallery-grid img:first-child{grid-row:span 2}.statement{background-attachment:scroll;padding:75px 0}.contact-form{padding:20px}.chat-launch{right:16px;bottom:16px}.chat-panel{right:16px;bottom:90px;height: min(500px,70vh)}}
+    @media(max-width:390px){.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.service-card img{height:190px}}
+  </style>
 </head>
-
 <body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Thodukayil Group home"><span class="brand-mark">T</span><span>THODUKAYIL<small>GROUP</small></span></a>
+      <nav class="links" id="navLinks">
+        <a href="#about">About</a><a href="#divisions">Our Divisions</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">LET'S CONNECT ↗</a>
+      <button class="menu" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
 
-<header>
-<nav>
-  <div class="logo">THODUKAYIL GROUP</div>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#divisions">Divisions</a>
-    <a href="#values">Values</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-</header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap"><div class="hero-content">
+        <div class="eyebrow">A diversified business group</div>
+        <h1>Building value.<br><span>Growing together.</span></h1>
+        <p>Rooted in trust and driven by ambition, Thodukayil Group brings together diverse business interests with a shared commitment to quality, relationships and long-term growth.</p>
+        <div class="hero-actions"><a class="btn" href="#divisions">EXPLORE OUR DIVISIONS ↗</a><a class="btn btn-outline" href="#contact">CONTACT OUR TEAM</a></div>
+      </div></div>
+      <div class="hero-note">Trust · Enterprise · Progress</div>
+    </section>
 
-<section class="hero" id="home">
-<div class="hero-content">
-  <p class="small">WELCOME TO</p>
-  <h1>THODUKAYIL GROUP</h1>
-  <h2>Excellence • Integrity • Growth</h2>
-  <p>
-    A diversified business group with interests in
-    petroleum, construction, exports and plantations.
-  </p>
-  <a class="btn" href="#divisions">Explore Our Businesses</a>
-  <a class="btn" href="#contact">Contact Us</a>
-</div>
-</section>
+    <section class="intro" id="about">
+      <div class="wrap intro-grid">
+        <div>
+          <div class="eyebrow">Who we are</div>
+          <h2>Enterprise with purpose. Progress with integrity.</h2>
+          <p>Thodukayil Group is a diversified business group with interests spanning petroleum, construction, exports and plantations. We believe lasting success is built through dependable service, thoughtful partnerships and a forward-looking approach.</p>
+          <p>From our roots in Kerala, we look toward opportunities that create value for customers, partners and communities.</p>
+          <a class="btn" href="#contact">START A CONVERSATION ↗</a>
+        </div>
+        <div class="intro-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Modern business workspace"><div class="photo-tag">A connected group of businesses, moving forward together.</div></div>
+      </div>
+    </section>
 
-<section class="about" id="about">
-<div class="section-title">
-  <h2>About Us</h2>
-  <p>Our journey, vision and commitment</p>
-</div>
-<div class="about-content">
-  <p>
-    Welcome to Thodukayil Group. We are a diversified
-    business group with operations across multiple
-    industries. Our business interests include petroleum
-    distribution, construction, international exports
-    and plantation management.
-  </p>
-  <br>
-  <p>
-    Our commitment is to build lasting relationships,
-    deliver quality services and create sustainable
-    growth through integrity, innovation and excellence.
-  </p>
-</div>
-</section>
+    <section class="section services" id="divisions">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">What we do</div><h2>Our business divisions</h2></div><p>Distinct areas of focus, united by a common standard: dependable relationships and a commitment to doing business well.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><img loading="lazy" src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80" alt="Petroleum and energy infrastructure"><div class="service-body"><span class="service-num">01 / ENERGY</span><h3>Petroleum</h3><p>Serving energy and petroleum-related business opportunities with a focus on reliability and responsible operations.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Construction site"><div class="service-body"><span class="service-num">02 / INFRASTRUCTURE</span><h3>Construction</h3><p>Supporting the built environment through practical thinking, quality and attention to detail.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=900&q=80" alt="Shipping containers and global trade"><div class="service-body"><span class="service-num">03 / GLOBAL TRADE</span><h3>Exports</h3><p>Connecting products and markets through trade relationships and a global outlook.</p></div></article>
+          <article class="service-card"><img loading="lazy" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80" alt="Lush green plantation landscape"><div class="service-body"><span class="service-num">04 / AGRICULTURE</span><h3>Plantations</h3><p>Recognising the value of land, cultivation and sustainable long-term stewardship.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-<section id="divisions">
-<div class="section-title">
-  <h2>Our Business Divisions</h2>
-  <p>Four business areas. One group. A shared vision.</p>
-</div>
+    <section class="statement"><div class="wrap statement-inner"><div class="eyebrow">Our philosophy</div><h2>Strong relationships are the foundation of <span>lasting business.</span></h2></div></section>
 
-<div class="grid">
+    <section class="section gallery" id="gallery">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">A closer look</div><h2>Business in perspective</h2></div><p>A visual glimpse of the sectors, landscapes and ideas that inspire our work.</p></div>
+        <div class="gallery-grid">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1200&q=85" alt="Industrial energy facility">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80" alt="Contemporary architecture">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Green agricultural fields">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="Coastal landscape">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="Professional office interior">
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-  <div class="icon">⛽</div>
-  <h3>Petroleum Division</h3>
-  <p>
-    Petroleum products distribution and fuel station
-    operations with a commitment to quality and service.
-  </p>
-  <ul>
-    <li>Fuel Distribution</li>
-    <li>Service Stations</li>
-    <li>Bulk Supply</li>
-    <li>Quality Assurance</li>
-  </ul>
-</div>
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow">Get in touch</div><h2>Let's build something meaningful.</h2>
+          <p>Have a business enquiry, partnership idea or question about our divisions? We'd be pleased to hear from you.</p>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:thodukayilgroup@gmail.com"><span class="contact-icon">✉</span><span><small>Email us</small>thodukayilgroup@gmail.com</span></a>
+            <div class="contact-item"><span class="contact-icon">⌖</span><span><small>Based in</small>Kerala, India</span></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="visitorName">Your name</label><input id="visitorName" name="name" placeholder="Enter your name" required>
+          <label for="visitorEmail">Your email</label><input id="visitorEmail" name="email" type="email" placeholder="you@example.com" required>
+          <label for="visitorMessage">How can we help?</label><textarea id="visitorMessage" name="message" placeholder="Write your enquiry..." required></textarea>
+          <button class="btn" type="submit">SEND ENQUIRY ↗</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-<div class="card">
-  <div class="icon">🏗️</div>
-  <h3>Construction Division</h3>
-  <p>
-    Comprehensive construction services for residential,
-    commercial and infrastructure developments.
-  </p>
-  <ul>
-    <li>Residential Projects</li>
-    <li>Commercial Buildings</li>
-    <li>Infrastructure</li>
-    <li>Project Management</li>
-  </ul>
-</div>
+  <footer><div class="wrap footer-inner">
+    <div><div class="footer-brand">THODUKAYIL <span>GROUP</span></div><p>Building value. Growing together.</p></div>
+    <a class="footer-email" href="mailto:thodukayilgroup@gmail.com">thodukayilgroup@gmail.com</a>
+    <div class="copyright">© <span id="year"></span> Thodukayil Group. All rights reserved.</div>
+  </div></footer>
 
-<div class="card">
-  <div class="icon">🚢</div>
-  <h3>Export Division</h3>
-  <p>
-    Export operations focused on spices, agricultural
-    products and traditional commodities.
-  </p>
-  <ul>
-    <li>Spice Export</li>
-    <li>Agricultural Products</li>
-    <li>Global Logistics</li>
-    <li>Quality Control</li>
-  </ul>
-</div>
+  <button class="chat-launch" id="chatLaunch" aria-label="Open Thodukayil AI assistant">✦</button>
+  <section class="chat-panel" id="chatPanel" aria-label="Thodukayil AI assistant">
+    <div class="chat-head"><div><strong>Thodukayil AI Assistant</strong><small>Ask us about the group and our divisions</small></div><button class="chat-close" id="chatClose" aria-label="Close chat">×</button></div>
+    <div class="chat-messages" id="chatMessages"><div class="bubble bot">Hello! Welcome to Thodukayil Group. I'm the group's AI assistant. What would you like to know about our business divisions or how to contact us?</div></div>
+    <div class="chat-hint">AI responses may need confirmation from our team.</div>
+    <form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="1000" placeholder="Type your question..." autocomplete="off" required><button type="submit" aria-label="Send message">➤</button></form>
+  </section>
 
-<div class="card">
-  <div class="icon">🌴</div>
-  <h3>Plantation Division</h3>
-  <p>
-    Plantation management focused on sustainable
-    agriculture and responsible farming practices.
-  </p>
-  <ul>
-    <li>Rubber Plantations</li>
-    <li>Coconut Estates</li>
-    <li>Sustainable Farming</li>
-    <li>Modern Techniques</li>
-  </ul>
-</div>
-
-</div>
-</section>
-
-<section class="values" id="values">
-<div class="section-title">
-  <h2>Our Core Values</h2>
-  <p>The principles behind everything we do</p>
-</div>
-
-<div class="grid">
-
-<div class="card value-card">
-  <div class="icon">🛡️</div>
-  <h3>Integrity</h3>
-  <p>Honesty and ethical business practices in every operation.</p>
-</div>
-
-<div class="card value-card">
-  <div class="icon">🏆</div>
-  <h3>Excellence</h3>
-  <p>Delivering quality and service across our divisions.</p>
-</div>
-
-<div class="card value-card">
-  <div class="icon">💡</div>
-  <h3>Innovation</h3>
-  <p>Embracing modern technologies and new opportunities.</p>
-</div>
-
-<div class="card value-card">
-  <div class="icon">🌱</div>
-  <h3>Sustainability</h3>
-  <p>Building a better future through responsible practices.</p>
-</div>
-
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="section-title">
-  <h2>Contact Us</h2>
-  <p>We would love to hear from you</p>
-</div>
-
-<div class="contact-box">
-  <h3 style="color:#d6ad60">THODUKAYIL GROUP</h3>
-
-  <p>📧 Email:
-    <a href="mailto:thodukayilgroup@gmail.com">
-      thodukayilgroup@gmail.com
-    </a>
-  </p>
-
-  <p>📞 Phone:
-    <a href="tel:+919946991012">
-      +91 9946991012
-    </a>
-  </p>
-
-  <p>📍 Address: Kottayam, Kerala 686585</p>
-
-  <a class="btn"
-     href="https://wa.me/919946991012"
-     target="_blank">
-     Chat on WhatsApp
-  </a>
-</div>
-</section>
-
-<footer>
-  <h2>THODUKAYIL GROUP</h2>
-  <p>Excellence • Integrity • Growth</p>
-  <p>
-    © <span id="year"></span> Thodukayil Group.
-    All Rights Reserved.
-  </p>
-  <p>Official Website</p>
-</footer>
-
-<script>
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-</script>
-
+  <script>
+    const API_URL = "https://YOUR-CLOUDFLARE-WORKER.workers.dev";
+    const menuBtn=document.getElementById("menuBtn"),navLinks=document.getElementById("navLinks");
+    menuBtn.addEventListener("click",()=>navLinks.classList.toggle("show"));
+    navLinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>navLinks.classList.remove("show")));
+    document.getElementById("year").textContent=new Date().getFullYear();
+    document.getElementById("contactForm").addEventListener("submit",e=>{
+      e.preventDefault();const f=new FormData(e.currentTarget);
+      const subject=encodeURIComponent("Website enquiry from "+f.get("name"));
+      const body=encodeURIComponent("Name: "+f.get("name")+"\nEmail: "+f.get("email")+"\n\n"+f.get("message"));
+      window.location.href="mailto:thodukayilgroup@gmail.com?subject="+subject+"&body="+body;
+    });
+    const panel=document.getElementById("chatPanel"),messages=document.getElementById("chatMessages"),chatForm=document.getElementById("chatForm"),chatInput=document.getElementById("chatInput");
+    const history=[];
+    document.getElementById("chatLaunch").addEventListener("click",()=>panel.classList.toggle("open"));
+    document.getElementById("chatClose").addEventListener("click",()=>panel.classList.remove("open"));
+    function addBubble(text,who){const d=document.createElement("div");d.className="bubble "+who;d.textContent=text;messages.appendChild(d);messages.scrollTop=messages.scrollHeight;return d;}
+    chatForm.addEventListener("submit",async e=>{
+      e.preventDefault();const text=chatInput.value.trim();if(!text)return;chatInput.value="";addBubble(text,"user");
+      const wait=addBubble("Thinking…","bot");
+      if(API_URL.includes("YOUR-CLOUDFLARE-WORKER")){wait.textContent="The AI assistant is designed and ready. The secure AI backend still needs to be connected by the website owner.";return;}
+      history.push({role:"user",content:text});if(history.length>12)history.splice(0,2);
+      try{
+        const res=await fetch(API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:history})});
+        const data=await res.json();if(!res.ok)throw new Error(data.error||"The assistant is temporarily unavailable.");
+        const answer=data.reply||"Sorry, I couldn't create a response.";wait.textContent=answer;history.push({role:"assistant",content:answer});if(history.length>12)history.splice(0,2);
+      }catch(err){wait.textContent="Sorry, the assistant couldn't connect just now. Please email thodukayilgroup@gmail.com for help.";}
+    });
+  </script>
 </body>
 </html>
